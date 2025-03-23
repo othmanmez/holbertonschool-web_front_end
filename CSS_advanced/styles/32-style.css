@@ -1,0 +1,30 @@
+:root {
+    --transition-duration: .3s;
+    --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+/* Card work animations */
+.card-work:hover .card-image {
+    transform: scale(1.2);
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+.card-work:hover .card-outer {
+    transform: scale(0.95);
+}
+
+/* Navigation animations */
+.nav .nav-link::before {
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Button animations */
+.button:hover {
+    transition-duration: var(--transition-duration);
+    transition-property: color, background-color;
+}
+
+/* Card work transitions */
+.card-work .card-inner {
+    transition: var(--transition-duration) var(--transition-cubic-bezier);
+} 
